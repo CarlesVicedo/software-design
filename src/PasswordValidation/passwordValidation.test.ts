@@ -39,7 +39,8 @@ describe('Given a password validation', () => {
     });
 
     test('Then it has to return true when a valid password is provided', () => {
-      expect(() => passwordValidation('Sword1234&')).toBeTruthy();
+      console.log(passwordValidation('Sword1234&'));
+      expect(() => passwordValidation('Sword1234&')).toBe(true);
     });
   });
 });

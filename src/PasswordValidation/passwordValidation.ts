@@ -12,7 +12,7 @@ const passwordValidation = (password: string) => {
       numberOfCapitalLetters++;
     }
 
-    if (/specialCharacters/.test(letter)) {
+    if (/\W|_/g.test(letter)) {
       numberOfSpecialCharacters++;
     }
   }
