@@ -16,10 +16,6 @@ class Account {
   public withdraw(amount: number) {
     this.balance -= amount;
   }
-
-  public printStatement() {
-    console.log('that is an statement');
-  }
 }
 
 export default Account;

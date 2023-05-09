@@ -16,13 +16,4 @@ describe('Given a Account class', () => {
       expect(account.balance).toBe(900);
     });
   });
-
-  describe('When printStatement is called', () => {
-    test('Then a log should be printed in console', () => {
-      const account = new Account();
-      const printStatementSpy = jest.spyOn(console, 'log');
-      account.printStatement();
-      expect(printStatementSpy).toHaveBeenCalled();
-    });
-  });
 });
